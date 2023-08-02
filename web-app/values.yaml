@@ -42,9 +42,9 @@ autoscaling:
 nodeSelector: {}
 
 tolerations:
-  tolerations:
   - key: "workloadType"
-    operator: "nginx"
+    value: "nginx"
+    operator: "Equal"
     effect: "NoExecute"
 
 affinity: {}
